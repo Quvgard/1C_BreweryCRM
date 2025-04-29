@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Страницы" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="63"/>
+			<ChildItems>
+				<Page name="ГруппаОсновное" id="64">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основное</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основное</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОсновноеРасширеннаяПодсказка" id="65"/>
+					<ChildItems>
+						<InputField name="Код" id="1">
+							<DataPath>Объект.Code</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="Наименование" id="4">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="ПолноеНаименование" id="7">
+							<DataPath>Объект.ПолноеНаименование</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ПолноеНаименованиеРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="АдресРегистрации" id="22">
+							<DataPath>Объект.АдресРегистрации</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="АдресРегистрацииКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="АдресРегистрацииРасширеннаяПодсказка" id="24"/>
+						</InputField>
+						<InputField name="ПочтовыйАдрес" id="25">
+							<DataPath>Объект.ПочтовыйАдрес</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПочтовыйАдресКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ПочтовыйАдресРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<InputField name="ПредпочтенияКлиента" id="31">
+							<DataPath>Объект.ПредпочтенияКлиента</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПредпочтенияКлиентаКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="ПредпочтенияКлиентаРасширеннаяПодсказка" id="33"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаДополнительное" id="66">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительное</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дополнительное</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДополнительноеРасширеннаяПодсказка" id="67"/>
+					<ChildItems>
+						<InputField name="ТипКлиента" id="10">
+							<DataPath>Объект.ТипКлиента</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТипКлиентаКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ТипКлиентаРасширеннаяПодсказка" id="12"/>
+							<Events>
+								<Event name="OnChange">ТипКлиентаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ИННКПП" id="19">
+							<DataPath>Объект.ИННКПП</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ИННКППКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ИННКППРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="Приоритет" id="13">
+							<DataPath>Объект.Приоритет</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПриоритетКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ПриоритетРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<InputField name="СегментРынка" id="34">
+							<DataPath>Объект.СегментРынка</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СегментРынкаКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="СегментРынкаРасширеннаяПодсказка" id="36"/>
+						</InputField>
+						<InputField name="Статус" id="16">
+							<DataPath>Объект.Статус</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СтатусКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="18"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаКонтактныеДанные" id="68">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контактные данные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа контактные данные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаКонтактныеДанныеРасширеннаяПодсказка" id="69"/>
+					<ChildItems>
+						<InputField name="Email" id="28">
+							<DataPath>Объект.Email</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="EmailКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="EmailРасширеннаяПодсказка" id="30"/>
+						</InputField>
+						<Table name="КонтактныеДанные" id="37">
+							<Representation>List</Representation>
+							<TitleLocation>Top</TitleLocation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.КонтактныеДанные</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контактные лица</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="КонтактныеДанныеКонтекстноеМеню" id="38"/>
+							<AutoCommandBar name="КонтактныеДанныеКоманднаяПанель" id="39"/>
+							<ExtendedTooltip name="КонтактныеДанныеРасширеннаяПодсказка" id="40"/>
+							<SearchStringAddition name="КонтактныеДанныеСтрокаПоиска" id="41">
+								<AdditionSource>
+									<Item>КонтактныеДанные</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КонтактныеДанныеСтрокаПоискаКонтекстноеМеню" id="42"/>
+								<ExtendedTooltip name="КонтактныеДанныеСтрокаПоискаРасширеннаяПодсказка" id="43"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="КонтактныеДанныеСостояниеПросмотра" id="44">
+								<AdditionSource>
+									<Item>КонтактныеДанные</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КонтактныеДанныеСостояниеПросмотраКонтекстноеМеню" id="45"/>
+								<ExtendedTooltip name="КонтактныеДанныеСостояниеПросмотраРасширеннаяПодсказка" id="46"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="КонтактныеДанныеУправлениеПоиском" id="47">
+								<AdditionSource>
+									<Item>КонтактныеДанные</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="КонтактныеДанныеУправлениеПоискомКонтекстноеМеню" id="48"/>
+								<ExtendedTooltip name="КонтактныеДанныеУправлениеПоискомРасширеннаяПодсказка" id="49"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="КонтактныеДанныеНомерСтроки" id="50">
+									<DataPath>Объект.КонтактныеДанные.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КонтактныеДанныеНомерСтрокиКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="КонтактныеДанныеНомерСтрокиРасширеннаяПодсказка" id="52"/>
+								</LabelField>
+								<InputField name="КонтактныеДанныеКонтактноеЛицоФИО" id="53">
+									<DataPath>Объект.КонтактныеДанные.КонтактноеЛицоФИО</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="КонтактныеДанныеКонтактноеЛицоФИОКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="КонтактныеДанныеКонтактноеЛицоФИОРасширеннаяПодсказка" id="55"/>
+								</InputField>
+								<InputField name="КонтактныеДанныеДолжность" id="56">
+									<DataPath>Объект.КонтактныеДанные.Должность</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="КонтактныеДанныеДолжностьКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="КонтактныеДанныеДолжностьРасширеннаяПодсказка" id="58"/>
+								</InputField>
+								<InputField name="КонтактныеДанныеНомерТелефона" id="59">
+									<DataPath>Объект.КонтактныеДанные.НомерТелефона</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="КонтактныеДанныеНомерТелефонаКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="КонтактныеДанныеНомерТелефонаРасширеннаяПодсказка" id="61"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Клиенты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаФайлы" id="68">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Файлы</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Прикрепить файл</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаФайлыРасширеннаяПодсказка" id="69"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Клиент" id="7">
+			<DataPath>Объект.Клиент</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КлиентКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КлиентРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ОтветственныйМенеджер" id="13">
+			<DataPath>Объект.ОтветственныйМенеджер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ОтветственныйМенеджерКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ОтветственныйМенеджерРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="СпособДоставки" id="25">
+			<DataPath>Объект.СпособДоставки</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СпособДоставкиКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="СпособДоставкиРасширеннаяПодсказка" id="27"/>
+			<Events>
+				<Event name="OnChange">СпособДоставкиПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Маршрут" id="10">
+			<DataPath>Объект.Маршрут</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="МаршрутКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="МаршрутРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="СрокВыполнения" id="28">
+			<DataPath>Объект.СрокВыполнения</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СрокВыполненияКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="СрокВыполненияРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="Скидка" id="16">
+			<DataPath>1/0:9d2c25d6-ea28-41e2-b6bf-cbb78ec6458b</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СкидкаКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="СкидкаРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ОбщаяСтоимость" id="19">
+			<DataPath>Объект.ОбщаяСтоимость</DataPath>
+			<Enabled>false</Enabled>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ОбщаяСтоимостьКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ОбщаяСтоимостьРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="СтатусЗаказа" id="22">
+			<DataPath>Объект.СтатусЗаказа</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СтатусЗаказаКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="СтатусЗаказаРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<Table name="СоставЗаказа" id="31">
+			<Representation>List</Representation>
+			<TitleLocation>Top</TitleLocation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.СоставЗаказа</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состав заказа</v8:content>
+				</v8:item>
+			</Title>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СоставЗаказаКонтекстноеМеню" id="32"/>
+			<AutoCommandBar name="СоставЗаказаКоманднаяПанель" id="33"/>
+			<ExtendedTooltip name="СоставЗаказаРасширеннаяПодсказка" id="34"/>
+			<SearchStringAddition name="СоставЗаказаСтрокаПоиска" id="35">
+				<AdditionSource>
+					<Item>СоставЗаказа</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СоставЗаказаСтрокаПоискаКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="СоставЗаказаСтрокаПоискаРасширеннаяПодсказка" id="37"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СоставЗаказаСостояниеПросмотра" id="38">
+				<AdditionSource>
+					<Item>СоставЗаказа</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СоставЗаказаСостояниеПросмотраКонтекстноеМеню" id="39"/>
+				<ExtendedTooltip name="СоставЗаказаСостояниеПросмотраРасширеннаяПодсказка" id="40"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СоставЗаказаУправлениеПоиском" id="41">
+				<AdditionSource>
+					<Item>СоставЗаказа</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СоставЗаказаУправлениеПоискомКонтекстноеМеню" id="42"/>
+				<ExtendedTooltip name="СоставЗаказаУправлениеПоискомРасширеннаяПодсказка" id="43"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СоставЗаказаНомерСтроки" id="44">
+					<DataPath>Объект.СоставЗаказа.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СоставЗаказаНомерСтрокиКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="СоставЗаказаНомерСтрокиРасширеннаяПодсказка" id="46"/>
+				</LabelField>
+				<InputField name="СоставЗаказаПродукция" id="47">
+					<DataPath>Объект.СоставЗаказа.Продукция</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СоставЗаказаПродукцияКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="СоставЗаказаПродукцияРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="СоставЗаказаТипУпаковки" id="50">
+					<DataPath>Объект.СоставЗаказа.ТипУпаковки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СоставЗаказаТипУпаковкиКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="СоставЗаказаТипУпаковкиРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="СоставЗаказаОбъем" id="53">
+					<DataPath>Объект.СоставЗаказа.Объем</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СоставЗаказаОбъемКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="СоставЗаказаОбъемРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="СоставЗаказаКоличество" id="56">
+					<DataPath>Объект.СоставЗаказа.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СоставЗаказаКоличествоКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="СоставЗаказаКоличествоРасширеннаяПодсказка" id="58"/>
+					<Events>
+						<Event name="OnChange">СоставЗаказаКоличествоЦенаСтоимостьПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="СоставЗаказаЦенаЗаЕд" id="62">
+					<DataPath>Объект.СоставЗаказа.ЦенаЗаЕд</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СоставЗаказаЦенаЗаЕдКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="СоставЗаказаЦенаЗаЕдРасширеннаяПодсказка" id="64"/>
+					<Events>
+						<Event name="OnChange">СоставЗаказаКоличествоЦенаСтоимостьПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="СоставЗаказаСтоимость" id="59">
+					<DataPath>Объект.СоставЗаказа.Стоимость</DataPath>
+					<Enabled>false</Enabled>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СоставЗаказаСтоимостьКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="СоставЗаказаСтоимостьРасширеннаяПодсказка" id="61"/>
+					<Events>
+						<Event name="OnChange">СоставЗаказаКоличествоЦенаСтоимостьПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Заказы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Файлы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файлы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файлы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Файлы</Action>
+		</Command>
+	</Commands>
+</Form>
